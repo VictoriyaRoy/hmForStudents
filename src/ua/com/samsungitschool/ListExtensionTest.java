@@ -11,12 +11,12 @@ import static org.junit.Assert.*;
 
 public class ListExtensionTest {
     private List<Integer> list;
-    private ListExtension extension;
+    private IListDeleteByFilter extension;
 
     @Before
     public void setUp() throws Exception {
         list = new ArrayList<>();
-        extension = new ListExtension();
+        extension = Main.createListExtension();
     }
 
     @Test

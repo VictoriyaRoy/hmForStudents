@@ -5,4 +5,7 @@ class Main {
 
     }
 
+    public static IListDeleteByFilter<Integer> createListExtension() {
+        return new ListExtension();
+    }
 }
